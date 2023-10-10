@@ -18,3 +18,6 @@ disp(['e) A percentagem simulada do 1º filho ser rapaz e existir mais um filho 
 
 rapaz_0_4_f = calcularProbabilidade(0.5, 0, 4, 1e5);
 disp(['f) A percentagem simulada de existir pelo menos 2 rapazes é ',num2str((1-rapaz_0_4_f)*100),'%']);
+
+nao_sair_rapaz_teorica = calcularProbabilidadeTeorica(0.5, 0, 2);
+disp(['E) A percentagem teórica de não sair rapaz é ',num2str((1-nao_sair_rapaz_teorica)*100),'%']);
