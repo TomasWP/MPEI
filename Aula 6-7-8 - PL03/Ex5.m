@@ -25,12 +25,9 @@ p_sol_3 = P3(1,1);
 % Calcule a probabilidade de não chover nem no segundo dia nem no terceiro dia
 p_sol_2_3 = p_sol_2 * p_sol_3;
 
-disp(p_sol_2_3)
-
 % Probabilidade de não chover nem no segundo dia nem no terceiro dia de janeiro quando o primeiro dia e de sol
-Prob_total = P_day2 * P_day3;
 
-disp(['C) Probabilidade de não chover nem no segundo dia nem no terceiro dia de janeiro quando o primeiro dia e de sol: ', num2str(Prob_total)]);
+disp(['C) Probabilidade de não chover nem no segundo dia nem no terceiro dia de janeiro quando o primeiro dia e de sol: ', num2str(p_sol_2_3)]);
 
 % D)
 
