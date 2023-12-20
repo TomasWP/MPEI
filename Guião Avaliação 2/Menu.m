@@ -1,6 +1,7 @@
 % Carregar os dados do arquivo movies.csv
 movies = readcell('movies.csv', 'Delimiter', ',');
 
+
 % Substituir strings vazias e '(no genres listed)'
 movies(cellfun(@(x) isempty(x) || strcmp(x, '(no genres listed)'), movies)) = {''};
 
@@ -13,14 +14,20 @@ while true
     fprintf('4 - Search movie titles\n')
     fprintf('5 - Search movies based on genres\n')
     fprintf('6 - Exit\n')
-    option = input('Select an option: ');
+    option = -1;
+    while (option<1 || option>6)
+        option = input('Select an option: ');
+    end
     
     switch option
         case 1 
             display_available_genres(movies, 1);
         case 2
             genres_unique = display_available_genres(movies, 2);
-            genre = input('Select a genre: ');
+            genre = -1;
+            while (genre<=0 || genre > length(genres_unique))
+                genre = input('Select a genre: ');
+            end
             movies_of_genre(movies, genres_unique{genre})
         case 6
             disp('Exiting...')
