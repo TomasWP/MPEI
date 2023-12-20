@@ -37,7 +37,6 @@ function hashes=collect_hashes(movies, option, year)
             movies = movies(:, 3:end);
             % Loop through each cell to collect hashes
             for i = 1:size(movies, 1)
-                disp('3')
                 if yearsData(i) == year
                     for j = 1:size(movies, 2)
                         currentGenre = movies{i, j};

@@ -1,6 +1,13 @@
-% Carregar os dados do arquivo movies.csv
-movies = readcell('movies.csv', 'Delimiter', ',');
+workspaceFile = 'workspace.mat';
+moviesFile = 'movies.csv';
 
+if exist(workspaceFile, 'file') ~= 2
+    fprintf('Creating Workspace...\n');
+    createWorkspace(moviesFile, workspaceFile);
+end
+
+fprintf('Loading Workspace...\n');
+load(workspaceFile);
 
 % Substituir strings vazias e '(no genres listed)'
 movies(cellfun(@(x) isempty(x) || strcmp(x, '(no genres listed)'), movies)) = {''};
@@ -16,13 +23,15 @@ while true
     fprintf('6 - Exit\n')
     option = input('Select an option: ');
     while (option<1 || option>6)
-        disp('ERROR! Select a valid option!\n')
+        disp('ERROR! Select a valid option!')
         option = input('Select an option: ');
     end
     
     switch option
         case 1 
             display_available_genres(movies, 1);
+            disp('Saving...')
+            save(workspaceFile, 'movies');
         case 2
             genres_unique = display_available_genres(movies, 2);
             genre = input('Select a genre: ');
@@ -30,7 +39,7 @@ while true
                 disp('ERROR! Select a valid option!')
                 genre = input('Select a genre: ');
             end
-            movies_of_genre(movies, genres_unique{genre})
+            movies_of_genre(movies, genres_unique{genre});
 
         case 3 %%ERRADO....NECESSARIO CORRIGIR
             genres_unique = display_available_genres(movies, 2);
@@ -38,7 +47,7 @@ while true
             data = strsplit(user_input, ',');
             genre=str2double(data{1});
             year=str2double(data{2});
-            movies_of_genre_year(movies, genres_unique{genre}, 1995)
+            movies_of_genre_year(movies, genres_unique{genre}, 1995);
 
         case 6
             disp('Exiting...')

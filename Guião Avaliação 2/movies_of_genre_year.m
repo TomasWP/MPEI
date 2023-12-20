@@ -20,6 +20,6 @@ function count = movies_of_genre_year(movies, genre, year)
     genreHashStr = num2str(genreHash);
     count = bloomFilter(genreHashStr);
     
-    disp(['Number of movies in genre "', genre, '" in year ', year, ': ', num2str(count)]);
-    fprintf('\n')
+    fprintf('Number of movies in genre "%s" in year %d: %d\n', genre, year, count);
+    fprintf('\n');
 end
