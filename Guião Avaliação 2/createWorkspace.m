@@ -2,9 +2,8 @@ function createWorkspace(moviesFile, workspaceFile)
 
     movies = readcell(moviesFile, 'Delimiter', ',');
     
-
-    shingleSize = 4;
-    numHashFunctions = 3;
+    numhash_functions = 3;
+    shingle_size = 4;
 
 
     save(workspaceFile);

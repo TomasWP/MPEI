@@ -50,7 +50,7 @@ while true
             movies_of_genre_year(movies, genres_unique{genre}, 1995);
         case 4
             user_input = input('Insert a string: ','s'); % Converte a string de input para minúsculas e remove espaços
-            search_movie_title(movies, user_input);
+            search_movie_title(movies, user_input, shingle_size, numhash_functions);
 
         case 6
             disp('Exiting...')

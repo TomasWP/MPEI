@@ -1,47 +1,71 @@
-function [results] = search_movie_title(movies, input_string)
+function search_movie_title(movies, input_string, shingle_size, numhash_functions)
     
-    % Cria um vetor com os nomes dos filmes
-    movie_names = movies(:, 1);
+    simj = zeros(size(movies, 1), 1);
+    threshold = 0.4;
+    sim_titles = {};
 
-    % Cria um vetor com os generos dos filmes
-    movie_genres = movies(:, 3:end);
+    shingles = generate_shingles(input_string, shingle_size);
 
-    % Define os parâmetros para MinHash
-    shingle_size = 3; % Tamanho dos shingles
-    num_hash_functions = 100; % Número de funções de dispersão
+    signature = minhash_signature(shingles, numhash_functions);
+    clc;
+    disp('Loading...')
+    for i = 1:size(movies, 1)
+        movie_shingles = generate_shingles(movies{i, 1}, shingle_size);
 
-    % Calcula a matriz de assinaturas MinHash
-    minhash_matrix = zeros(length(movie_names), num_hash_functions);
-    for i = 1:length(movie_names)
-        movie_name = char(movie_names(i));
-        shingles = generate_shingles(movie_name, shingle_size);
-        minhash_matrix(i, :) = minhash(shingles, num_hash_functions);
+        movie_signature = zeros(numhash_functions, length(movie_shingles));
+        for j = 1:numhash_functions
+            hashValues = minhash(movie_shingles, j);
+            movie_signature(j, :) = hashValues;
+        end
+
+        for j = 1:min(size(signature, 2), size(movie_signature, 2))
+            % Similaridade de Jaccard
+            intersection = intersect(signature(:, j), movie_signature(:, j));
+            unionSet = union(signature(:, j), movie_signature(:, j));
+            disp(numel(intersection) / numel(unionSet))
+            simj(i) = numel(intersection) / numel(unionSet);
+
+            if simj(i) > threshold
+                sim_titles{end+1} = movies{i, 1};
+            end
+        end
     end
 
-    % Calcula a assinatura MinHash da string de input
-    input_shingles = generate_shingles(input_string, shingle_size);
-    input_signature = minhash(input_shingles, num_hash_functions);
+    % ordem decrescente de similaridade
+    [~, sorted_indices] = sort(simj, 'descend');
+    sim_titles = sim_titles(sorted_indices);
 
-    % Calcula a similaridade de Jaccard usando a assinatura MinHash
-    jaccard_indices = zeros(length(movie_names), 1);
-    for i = 1:length(movie_names)
-        jaccard_indices(i) = sum(minhash_matrix(i, :) == input_signature) / num_hash_functions;
+    fprintf('\nTop 5 similar movie titles:\n');
+
+    for k = 1:min(5, length(sim_titles))
+        disp(sim_titles{k})
+        fprintf('Jaccard Similarity: %0.2f\n', simj(sorted_indices(k)));
+
+        % Encontrar índice do título
+        title_index = find(strcmpi(movies(:, 1), sim_titles{k}), 1);
+        if ~isempty(title_index)
+            genres = movies(title_index, 3:end);
+
+            %células to string
+            genres = string(genres);
+
+            genres = genres(~cellfun('isempty', genres) & ~strcmp(genres, '(no genres listed)'));
+
+            if isempty(genres)
+                fprintf('Genres: Not available\n');
+            else
+                fprintf('     Genres: ');
+                genres = strjoin(genres, ', ');
+                fprintf('Genres: %s\n', genres)
+                fprintf('\n')
+            end
+        else
+            fprintf('Genres: Not available\n');
+        end
     end
 
-    % Ordena os filmes por ordem decrescente de similaridade
-    [~, indices] = sort(jaccard_indices, 'descend');
-
-    % Seleciona os 5 filmes com maior similaridade
-    results = movie_names(indices(1:5));
-
-    % Adiciona os generos dos filmes aos resultados
-    for i = 1:length(results)
-        results(i) = [results(i), movie_genres(indices(i)), jaccard_indices(indices(i))];
-    end
-
-    % Imprime os resultados
-    for i = 1:length(results)
-        fprintf('%s\t%s\t%f\n', results(i, 1), results(i, 2), results(i, 3));
+    if isempty(sim_titles)
+        fprintf('No similar titles found.\n');
     end
 end
 
