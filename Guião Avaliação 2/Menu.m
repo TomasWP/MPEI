@@ -14,8 +14,9 @@ while true
     fprintf('4 - Search movie titles\n')
     fprintf('5 - Search movies based on genres\n')
     fprintf('6 - Exit\n')
-    option = -1;
+    option = input('Select an option: ');
     while (option<1 || option>6)
+        disp('ERROR! Select a valid option!\n')
         option = input('Select an option: ');
     end
     
@@ -24,11 +25,21 @@ while true
             display_available_genres(movies, 1);
         case 2
             genres_unique = display_available_genres(movies, 2);
-            genre = -1;
+            genre = input('Select a genre: ');
             while (genre<=0 || genre > length(genres_unique))
+                disp('ERROR! Select a valid option!')
                 genre = input('Select a genre: ');
             end
             movies_of_genre(movies, genres_unique{genre})
+
+        case 3 %%ERRADO....NECESSARIO CORRIGIR
+            genres_unique = display_available_genres(movies, 2);
+            user_input = input("Select a genre and a year (separated by ','): ", "s");
+            data = strsplit(user_input, ',');
+            genre=str2double(data{1});
+            year=str2double(data{2});
+            movies_of_genre_year(movies, genres_unique{genre}, 1995)
+
         case 6
             disp('Exiting...')
             break;

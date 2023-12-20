@@ -1,6 +1,6 @@
-function count = movies_of_genre(movies, genre)
-    
-    hashes = collect_hashes(movies, 2, 0);
+function count = movies_of_genre_year(movies, genre, year)
+
+    hashes = collect_hashes(movies, 3, year);
 
     % Create containers.Map with string keys
     bloomFilter = containers.Map('KeyType','char','ValueType','uint32');
@@ -14,13 +14,12 @@ function count = movies_of_genre(movies, genre)
             bloomFilter(hashKey) = 1;
         end
     end
-
-    % Count number of movies for the selected genre
+    
+    % Count number of movies for the selected genre in the given year
     genreHash = string2hash(genre);
     genreHashStr = num2str(genreHash);
     count = bloomFilter(genreHashStr);
     
-    disp(['Number of movies in genre "', genre, '": ', num2str(count)]);
-
+    disp(['Number of movies in genre "', genre, '" in year ', year, ': ', num2str(count)]);
     fprintf('\n')
 end
