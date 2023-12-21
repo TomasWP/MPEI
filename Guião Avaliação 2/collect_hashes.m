@@ -28,7 +28,7 @@ function hashes=collect_hashes(movies, option, year)
                         end
                     end
                 end
-                clc;
+
                 progress = (i*100)/length(movies);
                 fprintf('Loading Results...%.2f %%\n', progress);
             end
@@ -64,4 +64,5 @@ function hashes=collect_hashes(movies, option, year)
                 fprintf('Loading Results...%.2f %%\n', progress);
             end
     end
+    fprintf('\n');
 end
