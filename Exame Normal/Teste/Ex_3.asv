@@ -57,9 +57,9 @@ for n1=1:length(FraseMinHash)
         % Compute the distance between the two rows
         % The distance is 1 minus the proportion of elements that are equal
         % This is a measure of how dissimilar the two rows are
+        disp(isMatch)
         Distance(n1,n2) = 1-sum(isMatch)/length(isMatch);
     end
 end
 
-disp("Distance matrix: ");
-disp(Distance);
+disp("Distance matrix: "+ Distance);

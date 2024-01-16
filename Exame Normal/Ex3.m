@@ -23,6 +23,10 @@ for FraseN=1:Nu
         FraseMinHash(FraseN,hashFuncN) = min(hashArr);
     end
 end
+disp("Frase 1 signature: "+ mat2str(FraseMinHash(1,:)));
+disp("Frase 2 signature: "+ mat2str(FraseMinHash(2,:)));
+disp("Frase 3 signature: "+ mat2str(FraseMinHash(3,:)));
+disp("Frase 4 signature: "+ mat2str(FraseMinHash(4,:)));
 Distance = zeros(4,4);
 
 for n1=1:length(FraseMinHash)
