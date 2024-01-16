@@ -30,7 +30,7 @@ F = inv(aux);                   % F = matriz inversa de aux
 
 num_medio = 1;                  % estado 6 sendo a meta apenas conta com 1 occorencia(final)
 for n = 1:5
-    num_medio = num_medio + F(n,1);         % somar numeros da 1º coluna de F(valores medios em cada estado)
+    num_medio = num_medio + F(n,1);         % somar numeros da 1º coluna de F(valores medios em cada est
 end
 
 fprintf("Número médio %6.4f\n", num_medio);

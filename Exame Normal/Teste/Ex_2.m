@@ -1,9 +1,9 @@
 % a)
 
-m = 300;
-fp = 0.03;
+m = 300;        % numero de palavras
+fp = 0.03;      % numero de falsos positivos
 
-n = ceil(-m/log(1-fp));
+n = ceil(-m/log(1-fp));     % n = tamanho do filtro em bits
 
 fprintf("Tamanho do filtro: %d\n", n);
 
