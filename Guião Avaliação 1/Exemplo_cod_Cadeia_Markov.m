@@ -4,7 +4,7 @@ H = [0.5 0.5 0;
         0     0.1 1];
 
  % how to use crawl()
-state = crawl(H, 1, 3)
+state = crawl(H, 1, 3);
 % if the Markov chain has more than 1 absorving state the third argument
 % must be a vector with the absorving states
 % for example in a chain with 5 states,and considering that states 4 and 5 are absorbing states:
