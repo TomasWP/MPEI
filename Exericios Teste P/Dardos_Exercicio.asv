@@ -1,0 +1,39 @@
+clc
+%% Enunciado
+% Considere o seguinte "jogo": lançamento com os olhos vendados de n dardos, 
+% um de cada vez, para m alvos, garantindo-se que cada dardo atinge 
+% sempre um alvo (e apenas 1).
+
+% (a) Estime por simulação a probabilidade de nenhum alvo ter sido atingido 
+%     mais do que uma vez quando n = 20 dardos e m = 100 alvos.
+
+num_dardos = 20; % Número de Dardos
+num_alvos = 100; % Número de Alvos
+num_exp = 1e5; % Número de Experiências
+
+acertos = randi(num_alvos, num_dardos, num_exp);
+
+acertos_alvos_diferentes = 0;
+acertos_alvos_iguais = 0;
+
+for i = 1:num_exp
+   coluna = acertos(:, i);
+
+   if length(unique(coluna)) == num_dardos
+        acertos_alvos_diferentes = acertos_alvos_diferentes + 1;
+   end
+end
+
+probSimulacaoAlvosDiferentesA = acertos_alvos_diferentes/num_exp
+
+% (b) Estime por simulação a probabilidade de pelo menos 1 alvo ter sido 
+%     atingido 2 ou mais vezes quando n = 20 dardos e m = 100 alvos.
+
+num_dardos = 20; % Número de Dardos
+num_alvos = 100; % Número de Alvos
+num_exp = 1e5; % Número de Experiências
+
+acertos = randi(num_dardos, num_alvos, num_exp) >= 2;
+
+
+
