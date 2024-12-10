@@ -1,0 +1,101 @@
+bagagem_ID,localizacao,tempo_ultimo_rastreamento,historico_movimentacao,atraso_voo,alertas_sistema,classificacao_esperada
+1,Porto,8,3,143,Sim,Em Trânsito
+2,Paris,5,1,151,Nao,Entregue
+3,Porto,2,2,123,Sim,Em Trânsito
+4,Porto,10,1,75,Nao,Perdida
+5,Paris,3,2,116,Sim,Perdida
+6,Paris,2,1,38,Sim,Em Trânsito
+7,Paris,10,1,111,Nao,Em Trânsito
+8,Porto,5,3,122,Sim,Em Trânsito
+9,Lisboa,6,3,108,Nao,Em Trânsito
+10,Lisboa,12,2,62,Nao,Em Trânsito
+11,Porto,14,2,65,Nao,Entregue
+12,Paris,6,1,31,Nao,Em Trânsito
+13,Lisboa,16,1,143,Nao,Entregue
+14,Lisboa,16,1,89,Sim,Em Trânsito
+15,Lisboa,4,2,64,Sim,Entregue
+16,Paris,13,1,140,Sim,Em Trânsito
+17,Porto,10,3,42,Sim,Perdida
+18,Lisboa,15,2,152,Sim,Entregue
+19,Porto,10,3,147,Sim,Entregue
+20,Porto,12,3,153,Sim,Em Trânsito
+21,Paris,12,2,67,Sim,Perdida
+22,Lisboa,7,2,69,Sim,Entregue
+23,Paris,5,3,155,Sim,Entregue
+24,Paris,1,1,83,Nao,Em Trânsito
+25,Lisboa,8,3,103,Sim,Em Trânsito
+26,Paris,11,3,125,Nao,Entregue
+27,Porto,5,1,173,Sim,Em Trânsito
+28,Lisboa,9,3,98,Sim,Em Trânsito
+29,Paris,4,3,115,Sim,Perdida
+30,Paris,5,3,103,Nao,Entregue
+31,Porto,11,1,167,Nao,Entregue
+32,Porto,15,3,156,Nao,Em Trânsito
+33,Paris,14,2,30,Sim,Perdida
+34,Porto,4,1,32,Sim,Entregue
+35,Porto,7,1,44,Nao,Entregue
+36,Porto,15,3,136,Nao,Entregue
+37,Porto,5,3,36,Sim,Entregue
+38,Porto,16,1,177,Sim,Entregue
+39,Paris,10,2,128,Sim,Em Trânsito
+40,Lisboa,3,1,31,Nao,Perdida
+41,Lisboa,14,3,155,Nao,Em Trânsito
+42,Lisboa,11,1,164,Sim,Entregue
+43,Lisboa,9,3,174,Nao,Entregue
+44,Lisboa,5,1,103,Nao,Em Trânsito
+45,Lisboa,1,3,101,Nao,Entregue
+46,Porto,4,1,31,Sim,Perdida
+47,Lisboa,6,3,92,Nao,Perdida
+48,Porto,11,1,99,Sim,Em Trânsito
+49,Paris,16,2,29,Nao,Entregue
+50,Porto,4,2,89,Sim,Entregue
+51,Porto,13,2,96,Sim,Perdida
+52,Paris,15,1,35,Sim,Entregue
+53,Porto,8,3,112,Sim,Entregue
+54,Paris,3,1,4,Nao,Em Trânsito
+55,Lisboa,13,2,57,Sim,Em Trânsito
+56,Paris,8,1,96,Nao,Perdida
+57,Paris,2,1,59,Nao,Entregue
+58,Paris,15,2,108,Nao,Entregue
+59,Lisboa,11,3,65,Sim,Perdida
+60,Paris,2,1,24,Nao,Em Trânsito
+61,Lisboa,15,3,165,Nao,Em Trânsito
+62,Lisboa,1,3,115,Nao,Perdida
+63,Lisboa,1,1,119,Sim,Entregue
+64,Porto,16,2,122,Nao,Em Trânsito
+65,Lisboa,11,3,134,Nao,Entregue
+66,Porto,7,1,152,Sim,Perdida
+67,Paris,9,3,93,Sim,Em Trânsito
+68,Paris,13,2,27,Sim,Entregue
+69,Lisboa,1,2,68,Nao,Entregue
+70,Paris,12,2,148,Nao,Perdida
+71,Lisboa,12,2,31,Sim,Entregue
+72,Lisboa,8,2,59,Sim,Em Trânsito
+73,Porto,10,1,174,Sim,Entregue
+74,Porto,6,1,145,Nao,Entregue
+75,Lisboa,3,2,40,Nao,Entregue
+76,Paris,7,2,180,Nao,Em Trânsito
+77,Paris,15,3,11,Sim,Em Trânsito
+78,Lisboa,4,3,77,Sim,Perdida
+79,Lisboa,6,1,73,Sim,Perdida
+80,Lisboa,6,2,72,Nao,Perdida
+81,Porto,2,2,20,Nao,Entregue
+82,Porto,9,2,76,Nao,Perdida
+83,Paris,14,2,111,Nao,Entregue
+84,Paris,15,2,178,Sim,Perdida
+85,Paris,12,3,39,Sim,Perdida
+86,Lisboa,7,3,64,Sim,Entregue
+87,Paris,5,1,48,Sim,Entregue
+88,Paris,12,3,52,Sim,Perdida
+89,Lisboa,15,2,34,Sim,Em Trânsito
+90,Porto,15,3,4,Sim,Em Trânsito
+91,Paris,2,1,81,Nao,Entregue
+92,Lisboa,8,1,44,Sim,Perdida
+93,Lisboa,3,1,157,Nao,Em Trânsito
+94,Porto,5,2,95,Sim,Perdida
+95,Paris,15,3,165,Nao,Entregue
+96,Porto,4,1,176,Nao,Em Trânsito
+97,Lisboa,2,1,105,Sim,Em Trânsito
+98,Paris,9,1,21,Nao,Entregue
+99,Porto,6,2,167,Sim,Em Trânsito
+100,Lisboa,7,3,107,Sim,Entregue
