@@ -1,0 +1,101 @@
+id,origem,destino,localizacao,tempo_desde_ultimo_scan,alertas_sistema,estado,tipo_bagagem,status_voo,numero_escalas,distancia_percorrida
+1,Aeroporto C,Aeroporto B,Paris,135,Sim,Perdida,Frágil,Atrasado,0,797
+2,Aeroporto B,Aeroporto C,Lisboa,111,Sim,Perdida,Normal,Atrasado,0,501
+3,Aeroporto B,Aeroporto C,Paris,26,Nao,Entregue,Frágil,Normal,0,965
+4,Aeroporto B,Aeroporto C,Porto,156,Sim,Perdida,Normal,Cancelado,0,511
+5,Aeroporto C,Aeroporto A,Lisboa,118,Sim,Perdida,Normal,Cancelado,1,1356
+6,Aeroporto C,Aeroporto B,Porto,186,Sim,Perdida,Frágil,Atrasado,1,566
+7,Aeroporto A,Aeroporto B,Lisboa,176,Sim,Perdida,Normal,Cancelado,1,814
+8,Aeroporto B,Aeroporto A,Lisboa,10,Nao,Entregue,Normal,Normal,0,939
+9,Aeroporto B,Aeroporto C,Porto,25,Nao,Entregue,Frágil,Normal,1,675
+10,Aeroporto B,Aeroporto A,Lisboa,153,Sim,Perdida,Normal,Cancelado,1,810
+11,Aeroporto A,Aeroporto C,Paris,173,Sim,Perdida,Normal,Cancelado,1,1067
+12,Aeroporto A,Aeroporto B,Porto,154,Sim,Perdida,Normal,Cancelado,0,890
+13,Aeroporto A,Aeroporto B,Lisboa,120,Sim,Perdida,Normal,Cancelado,0,667
+14,Aeroporto A,Aeroporto B,Paris,192,Sim,Perdida,Frágil,Cancelado,0,661
+15,Aeroporto C,Aeroporto B,Lisboa,24,Sim,Em trânsito,Valiosa,Atrasado,1,987
+16,Aeroporto B,Aeroporto C,Porto,12,Sim,Em trânsito,Frágil,Atrasado,1,937
+17,Aeroporto C,Aeroporto A,Lisboa,146,Sim,Perdida,Frágil,Atrasado,3,1873
+18,Aeroporto A,Aeroporto C,Paris,197,Sim,Perdida,Frágil,Atrasado,2,1132
+19,Aeroporto B,Aeroporto C,Paris,194,Sim,Perdida,Normal,Atrasado,0,548
+20,Aeroporto B,Aeroporto A,Porto,168,Sim,Perdida,Normal,Cancelado,1,714
+21,Aeroporto B,Aeroporto A,Porto,127,Sim,Perdida,Normal,Atrasado,0,887
+22,Aeroporto C,Aeroporto B,Lisboa,125,Sim,Perdida,Frágil,Atrasado,0,801
+23,Aeroporto C,Aeroporto A,Lisboa,20,Sim,Em trânsito,Frágil,Atrasado,1,1174
+24,Aeroporto B,Aeroporto A,Paris,146,Sim,Perdida,Normal,Cancelado,1,731
+25,Aeroporto C,Aeroporto A,Lisboa,163,Sim,Perdida,Frágil,Atrasado,1,1966
+26,Aeroporto B,Aeroporto C,Paris,106,Sim,Perdida,Frágil,Normal,0,605
+27,Aeroporto B,Aeroporto A,Paris,105,Sim,Perdida,Valiosa,Atrasado,0,657
+28,Aeroporto B,Aeroporto A,Paris,40,Nao,Entregue,Normal,Normal,0,870
+29,Aeroporto A,Aeroporto C,Porto,25,Sim,Em trânsito,Valiosa,Normal,2,1545
+30,Aeroporto C,Aeroporto B,Porto,188,Sim,Perdida,Frágil,Cancelado,0,764
+31,Aeroporto C,Aeroporto B,Lisboa,2,Nao,Em trânsito,Normal,Normal,1,932
+32,Aeroporto C,Aeroporto B,Paris,188,Sim,Perdida,Normal,Cancelado,1,988
+33,Aeroporto C,Aeroporto B,Porto,57,Nao,Entregue,Normal,Normal,0,595
+34,Aeroporto B,Aeroporto A,Porto,132,Sim,Perdida,Frágil,Cancelado,0,750
+35,Aeroporto B,Aeroporto C,Lisboa,11,Nao,Em trânsito,Normal,Atrasado,0,747
+36,Aeroporto B,Aeroporto C,Lisboa,33,Sim,Em trânsito,Frágil,Normal,0,923
+37,Aeroporto A,Aeroporto B,Paris,12,Nao,Entregue,Valiosa,Normal,1,834
+38,Aeroporto A,Aeroporto C,Paris,189,Sim,Perdida,Normal,Cancelado,2,1429
+39,Aeroporto B,Aeroporto A,Lisboa,21,Sim,Em trânsito,Valiosa,Atrasado,1,947
+40,Aeroporto B,Aeroporto C,Lisboa,183,Sim,Perdida,Normal,Atrasado,1,921
+41,Aeroporto A,Aeroporto B,Porto,29,Nao,Em trânsito,Normal,Atrasado,1,833
+42,Aeroporto B,Aeroporto A,Paris,188,Sim,Perdida,Normal,Cancelado,1,945
+43,Aeroporto C,Aeroporto A,Lisboa,189,Sim,Perdida,Frágil,Atrasado,3,1951
+44,Aeroporto C,Aeroporto A,Paris,45,Nao,Entregue,Frágil,Normal,3,1169
+45,Aeroporto C,Aeroporto A,Lisboa,186,Sim,Perdida,Frágil,Cancelado,3,1344
+46,Aeroporto B,Aeroporto C,Lisboa,115,Sim,Perdida,Normal,Normal,1,656
+47,Aeroporto A,Aeroporto B,Paris,128,Sim,Perdida,Valiosa,Atrasado,0,553
+48,Aeroporto B,Aeroporto C,Lisboa,103,Sim,Perdida,Normal,Cancelado,0,678
+49,Aeroporto A,Aeroporto B,Porto,22,Nao,Em trânsito,Normal,Normal,1,581
+50,Aeroporto C,Aeroporto B,Porto,150,Sim,Perdida,Normal,Cancelado,1,751
+51,Aeroporto C,Aeroporto B,Porto,107,Sim,Perdida,Normal,Normal,1,890
+52,Aeroporto C,Aeroporto A,Paris,27,Nao,Em trânsito,Normal,Normal,2,1682
+53,Aeroporto C,Aeroporto B,Porto,102,Sim,Perdida,Normal,Cancelado,1,846
+54,Aeroporto C,Aeroporto B,Paris,28,Nao,Entregue,Valiosa,Normal,1,770
+55,Aeroporto A,Aeroporto C,Porto,25,Sim,Em trânsito,Frágil,Normal,1,1328
+56,Aeroporto C,Aeroporto A,Paris,189,Sim,Perdida,Frágil,Normal,1,1338
+57,Aeroporto C,Aeroporto A,Lisboa,106,Sim,Perdida,Normal,Normal,2,1854
+58,Aeroporto A,Aeroporto C,Porto,199,Sim,Perdida,Normal,Cancelado,3,1930
+59,Aeroporto B,Aeroporto A,Paris,121,Sim,Perdida,Normal,Cancelado,0,544
+60,Aeroporto B,Aeroporto C,Porto,191,Sim,Perdida,Normal,Normal,0,762
+61,Aeroporto B,Aeroporto A,Paris,22,Sim,Em trânsito,Frágil,Normal,0,687
+62,Aeroporto C,Aeroporto A,Paris,44,Nao,Em trânsito,Normal,Atrasado,2,1121
+63,Aeroporto B,Aeroporto A,Porto,14,Nao,Em trânsito,Normal,Atrasado,0,726
+64,Aeroporto C,Aeroporto B,Paris,172,Sim,Perdida,Valiosa,Normal,1,996
+65,Aeroporto B,Aeroporto C,Paris,183,Sim,Perdida,Normal,Cancelado,0,518
+66,Aeroporto B,Aeroporto C,Porto,42,Nao,Entregue,Valiosa,Normal,0,931
+67,Aeroporto B,Aeroporto A,Porto,18,Nao,Entregue,Frágil,Normal,0,527
+68,Aeroporto B,Aeroporto C,Lisboa,107,Sim,Perdida,Frágil,Atrasado,1,688
+69,Aeroporto A,Aeroporto B,Lisboa,32,Sim,Em trânsito,Frágil,Normal,0,762
+70,Aeroporto C,Aeroporto A,Lisboa,47,Nao,Entregue,Normal,Normal,1,1643
+71,Aeroporto B,Aeroporto C,Porto,133,Sim,Perdida,Normal,Atrasado,1,687
+72,Aeroporto B,Aeroporto C,Lisboa,28,Nao,Entregue,Normal,Normal,0,590
+73,Aeroporto A,Aeroporto B,Paris,107,Sim,Perdida,Frágil,Cancelado,0,979
+74,Aeroporto A,Aeroporto B,Porto,160,Sim,Perdida,Normal,Cancelado,0,727
+75,Aeroporto A,Aeroporto B,Paris,38,Sim,Em trânsito,Frágil,Atrasado,0,864
+76,Aeroporto B,Aeroporto C,Lisboa,112,Sim,Perdida,Frágil,Cancelado,0,663
+77,Aeroporto C,Aeroporto B,Lisboa,110,Sim,Perdida,Normal,Atrasado,1,820
+78,Aeroporto A,Aeroporto B,Porto,105,Sim,Perdida,Normal,Normal,1,524
+79,Aeroporto A,Aeroporto B,Porto,157,Sim,Perdida,Frágil,Cancelado,1,797
+80,Aeroporto A,Aeroporto C,Lisboa,12,Nao,Em trânsito,Normal,Normal,2,1469
+81,Aeroporto C,Aeroporto A,Lisboa,130,Sim,Perdida,Frágil,Atrasado,3,1737
+82,Aeroporto B,Aeroporto A,Lisboa,178,Sim,Perdida,Normal,Cancelado,1,545
+83,Aeroporto A,Aeroporto C,Paris,63,Nao,Entregue,Normal,Normal,1,1867
+84,Aeroporto C,Aeroporto B,Lisboa,143,Sim,Perdida,Normal,Cancelado,0,923
+85,Aeroporto C,Aeroporto A,Lisboa,151,Sim,Perdida,Valiosa,Cancelado,1,1980
+86,Aeroporto C,Aeroporto B,Lisboa,61,Nao,Entregue,Normal,Normal,1,613
+87,Aeroporto C,Aeroporto B,Paris,20,Nao,Em trânsito,Normal,Normal,0,650
+88,Aeroporto B,Aeroporto A,Lisboa,108,Sim,Perdida,Normal,Atrasado,1,786
+89,Aeroporto A,Aeroporto B,Paris,107,Sim,Perdida,Normal,Atrasado,0,952
+90,Aeroporto A,Aeroporto C,Lisboa,28,Nao,Em trânsito,Normal,Atrasado,2,1930
+91,Aeroporto C,Aeroporto B,Lisboa,33,Nao,Entregue,Normal,Normal,0,671
+92,Aeroporto A,Aeroporto B,Lisboa,23,Nao,Entregue,Frágil,Normal,0,899
+93,Aeroporto A,Aeroporto B,Paris,155,Sim,Perdida,Normal,Cancelado,0,644
+94,Aeroporto C,Aeroporto A,Porto,134,Sim,Perdida,Valiosa,Cancelado,3,1379
+95,Aeroporto C,Aeroporto B,Porto,29,Nao,Em trânsito,Normal,Atrasado,1,743
+96,Aeroporto C,Aeroporto B,Paris,194,Sim,Perdida,Normal,Cancelado,1,780
+97,Aeroporto B,Aeroporto A,Paris,41,Sim,Em trânsito,Frágil,Normal,0,844
+98,Aeroporto C,Aeroporto A,Porto,113,Sim,Perdida,Normal,Normal,2,1794
+99,Aeroporto A,Aeroporto B,Lisboa,159,Sim,Perdida,Normal,Cancelado,0,621
+100,Aeroporto B,Aeroporto C,Porto,19,Nao,Em trânsito,Normal,Atrasado,0,993
