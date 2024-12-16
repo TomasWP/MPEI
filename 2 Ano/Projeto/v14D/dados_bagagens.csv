@@ -1,0 +1,101 @@
+id,origem,destino,localizacao,escalas,tempo_desde_ultimo_scan,alertas_sistema,lugar_bagagem,estado,tipo_bagagem,status_voo,distancia_percorrida
+1,Porto,Rio de Janeiro,Bangkok,Bangkok;Los Angeles,33,Sim,Cabine,Em trânsito,Frágil,Atrasado,295
+2,Roma,Porto,Porto,Tóquio,57,Nao,Porão,Entregue,Frágil,Normal,2745
+3,Sydney,Bangkok,Bangkok,Roma,68,Nao,Porão,Entregue,Normal,Atrasado,2576
+4,Porto,London,Los Angeles,Paris;Tóquio,111,Sim,Porão,Perdida,Frágil,Atrasado,6048
+5,Nova Iorque,Rio de Janeiro,Los Angeles,Barcelona;Paris;Dubai,140,Sim,Cabine,Perdida,Valiosa,Atrasado,3044
+6,Barcelona,London,London,Porto;Dubai,19,Nao,Cabine,Entregue,Normal,Normal,2899
+7,Lisboa,London,Paris,Sydney;Porto,150,Sim,Porão,Perdida,Frágil,Normal,1459
+8,Barcelona,Funchal,Paris,Tóquio;Paris,21,Sim,Porão,Em trânsito,Normal,Atrasado,444
+9,São Paulo,Madrid,Madrid,,61,Nao,Porão,Entregue,Normal,Normal,8065
+10,Paris,Porto,Lisboa,Tóquio;Lisboa;São Paulo,7,Sim,Porão,Em trânsito,Frágil,Normal,3890
+11,Bangkok,Madrid,Funchal,Barcelona;São Paulo;Funchal,33,Nao,Cabine,Entregue,Frágil,Cancelado,4428
+12,Roma,Barcelona,Barcelona,Funchal,35,Nao,Porão,Entregue,Normal,Atrasado,3176
+13,Bangkok,Funchal,São Paulo,Porto;Dubai;Lisboa,156,Sim,Porão,Perdida,Normal,Normal,8522
+14,Sydney,Barcelona,Barcelona,Dubai,54,Nao,Porão,Entregue,Valiosa,Atrasado,4369
+15,Barcelona,Funchal,Tóquio,Tóquio;Madrid;Paris,52,Nao,Porão,Entregue,Normal,Cancelado,8489
+16,Funchal,Rio de Janeiro,Rio de Janeiro,,58,Nao,Cabine,Entregue,Normal,Atrasado,7738
+17,Barcelona,Lisboa,Paris,Paris;Bangkok,15,Sim,Porão,Em trânsito,Valiosa,Normal,781
+18,Bangkok,São Paulo,Tóquio,Madrid;Dubai,157,Sim,Cabine,Perdida,Normal,Normal,3878
+19,Sydney,Rio de Janeiro,Rio de Janeiro,Roma;Tóquio;Lisboa,31,Nao,Cabine,Entregue,Normal,Atrasado,4298
+20,Nova Iorque,Sydney,Madrid,London,170,Sim,Porão,Perdida,Normal,Normal,3905
+21,Tóquio,Dubai,Dubai,Roma,39,Nao,Porão,Entregue,Normal,Normal,8789
+22,Barcelona,Bangkok,Sydney,Sydney,42,Sim,Cabine,Em trânsito,Normal,Atrasado,767
+23,Paris,Rio de Janeiro,Rio de Janeiro,Sydney;Roma,40,Nao,Porão,Entregue,Normal,Normal,8975
+24,Lisboa,Los Angeles,Los Angeles,,25,Nao,Porão,Entregue,Frágil,Normal,4391
+25,Barcelona,Lisboa,Lisboa,Roma;Funchal,18,Nao,Cabine,Entregue,Frágil,Atrasado,8168
+26,Sydney,Porto,Los Angeles,Los Angeles,20,Sim,Porão,Em trânsito,Frágil,Atrasado,7544
+27,Tóquio,Rio de Janeiro,Lisboa,,195,Sim,Porão,Perdida,Frágil,Atrasado,5504
+28,Madrid,São Paulo,São Paulo,Rio de Janeiro;Bangkok,57,Nao,Porão,Entregue,Normal,Normal,9732
+29,Los Angeles,London,Sydney,Sydney,32,Sim,Porão,Em trânsito,Normal,Atrasado,9002
+30,Nova Iorque,Porto,Rio de Janeiro,,164,Sim,Porão,Perdida,Normal,Normal,3494
+31,Madrid,Paris,São Paulo,São Paulo;London;Nova Iorque,16,Sim,Porão,Em trânsito,Normal,Atrasado,3463
+32,Funchal,Barcelona,Paris,Paris;Tóquio,26,Sim,Cabine,Em trânsito,Normal,Normal,2763
+33,Roma,Bangkok,Tóquio,Sydney;Tóquio,24,Sim,Cabine,Em trânsito,Normal,Normal,7745
+34,Tóquio,Barcelona,Barcelona,Funchal,44,Nao,Porão,Entregue,Normal,Normal,9761
+35,Rio de Janeiro,Barcelona,Dubai,São Paulo,183,Sim,Porão,Perdida,Valiosa,Normal,9691
+36,Roma,Tóquio,Lisboa,Barcelona,166,Sim,Porão,Perdida,Normal,Normal,691
+37,Sydney,Porto,Los Angeles,London,184,Sim,Cabine,Perdida,Normal,Normal,8296
+38,Rio de Janeiro,Paris,São Paulo,Sydney;Porto,147,Sim,Cabine,Perdida,Normal,Atrasado,8367
+39,Barcelona,Nova Iorque,Nova Iorque,,13,Nao,Porão,Entregue,Frágil,Atrasado,8662
+40,Dubai,Bangkok,Madrid,Madrid,37,Sim,Cabine,Em trânsito,Frágil,Atrasado,3856
+41,Barcelona,Paris,São Paulo,Nova Iorque;Rio de Janeiro,133,Sim,Porão,Perdida,Frágil,Normal,745
+42,Lisboa,Rio de Janeiro,Barcelona,Barcelona;Paris,8,Sim,Cabine,Em trânsito,Normal,Atrasado,4157
+43,Dubai,Sydney,Porto,Porto,30,Sim,Cabine,Em trânsito,Normal,Atrasado,858
+44,Dubai,Tóquio,Bangkok,Nova Iorque;Los Angeles,172,Sim,Porão,Perdida,Frágil,Atrasado,774
+45,London,Tóquio,Nova Iorque,Nova Iorque;Bangkok,19,Sim,Porão,Em trânsito,Normal,Atrasado,1259
+46,Tóquio,Rio de Janeiro,Los Angeles,Paris;Los Angeles;Dubai,14,Sim,Porão,Em trânsito,Normal,Normal,3089
+47,Rio de Janeiro,Barcelona,Roma,Funchal;Porto;Bangkok,151,Sim,Cabine,Perdida,Frágil,Normal,9977
+48,Rio de Janeiro,Porto,Porto,Sydney;Nova Iorque;Barcelona,44,Nao,Cabine,Entregue,Frágil,Normal,9235
+49,Dubai,London,Nova Iorque,Roma;Nova Iorque;Rio de Janeiro,25,Sim,Cabine,Em trânsito,Normal,Normal,7294
+50,Rio de Janeiro,Nova Iorque,Nova Iorque,Funchal;Dubai,35,Nao,Porão,Entregue,Normal,Normal,2274
+51,Tóquio,Nova Iorque,Nova Iorque,,52,Nao,Porão,Entregue,Normal,Normal,1682
+52,Lisboa,Porto,Madrid,Roma;Funchal;Dubai,138,Sim,Porão,Perdida,Frágil,Normal,122
+53,Sydney,Tóquio,Nova Iorque,Nova Iorque,32,Nao,Porão,Entregue,Normal,Cancelado,6857
+54,Roma,Porto,São Paulo,São Paulo,32,Nao,Porão,Entregue,Normal,Cancelado,4435
+55,Dubai,Los Angeles,Tóquio,,169,Sim,Porão,Perdida,Normal,Normal,7853
+56,Dubai,London,Sydney,Paris;Madrid,163,Sim,Porão,Perdida,Frágil,Atrasado,5224
+57,Sydney,Tóquio,Dubai,Bangkok,112,Sim,Porão,Perdida,Normal,Atrasado,5318
+58,Barcelona,Rio de Janeiro,Tóquio,,105,Sim,Cabine,Perdida,Normal,Atrasado,7696
+59,Tóquio,Los Angeles,Los Angeles,Roma;London,45,Nao,Porão,Entregue,Frágil,Normal,1000
+60,Funchal,Nova Iorque,Los Angeles,Madrid,180,Sim,Cabine,Perdida,Frágil,Normal,619
+61,Tóquio,Roma,Dubai,,114,Sim,Porão,Perdida,Frágil,Atrasado,8521
+62,Madrid,Los Angeles,Sydney,Nova Iorque;Sydney;Funchal,33,Nao,Cabine,Entregue,Frágil,Cancelado,8132
+63,Madrid,Roma,Tóquio,Barcelona;Porto,102,Sim,Cabine,Perdida,Normal,Normal,5018
+64,Lisboa,Funchal,Funchal,Nova Iorque;Los Angeles;Dubai,39,Nao,Cabine,Entregue,Frágil,Atrasado,5983
+65,Madrid,Tóquio,Los Angeles,Los Angeles;Paris;Funchal,10,Sim,Porão,Em trânsito,Frágil,Atrasado,5247
+66,Rio de Janeiro,Dubai,Dubai,Nova Iorque;Los Angeles,12,Nao,Porão,Entregue,Normal,Atrasado,7409
+67,Roma,Bangkok,Sydney,Dubai;Paris;Rio de Janeiro,143,Sim,Porão,Perdida,Normal,Atrasado,6011
+68,Bangkok,London,London,,62,Nao,Cabine,Entregue,Frágil,Normal,6557
+69,London,Barcelona,Barcelona,Bangkok;Paris;Roma,29,Nao,Cabine,Entregue,Normal,Normal,4426
+70,London,Paris,Dubai,Sydney;Dubai;Roma,6,Sim,Porão,Em trânsito,Normal,Atrasado,8631
+71,Madrid,Bangkok,Funchal,Funchal;Sydney,21,Sim,Porão,Em trânsito,Normal,Normal,4877
+72,London,Lisboa,Porto,Funchal;Barcelona;Sydney,173,Sim,Cabine,Perdida,Frágil,Atrasado,4935
+73,Paris,Roma,Funchal,Madrid;Rio de Janeiro,103,Sim,Porão,Perdida,Normal,Normal,1271
+74,Los Angeles,Nova Iorque,Nova Iorque,,25,Nao,Porão,Entregue,Valiosa,Atrasado,3610
+75,Nova Iorque,Los Angeles,São Paulo,Rio de Janeiro,116,Sim,Cabine,Perdida,Normal,Normal,9930
+76,Porto,Sydney,Paris,São Paulo,151,Sim,Cabine,Perdida,Normal,Normal,7795
+77,Lisboa,Roma,Paris,Madrid;Paris,42,Sim,Cabine,Em trânsito,Frágil,Atrasado,1525
+78,Madrid,London,Nova Iorque,,118,Sim,Porão,Perdida,Normal,Normal,6714
+79,Nova Iorque,Roma,Funchal,São Paulo;Rio de Janeiro,196,Sim,Porão,Perdida,Normal,Atrasado,4790
+80,Paris,Barcelona,Dubai,Rio de Janeiro,195,Sim,Porão,Perdida,Normal,Normal,7403
+81,Nova Iorque,São Paulo,São Paulo,Rio de Janeiro,23,Nao,Porão,Entregue,Frágil,Normal,4356
+82,Madrid,Porto,Porto,Barcelona,17,Nao,Porão,Entregue,Frágil,Normal,7766
+83,Tóquio,Madrid,Funchal,Los Angeles,150,Sim,Porão,Perdida,Frágil,Atrasado,3053
+84,Sydney,Nova Iorque,Dubai,Dubai,18,Sim,Porão,Em trânsito,Normal,Normal,3874
+85,Madrid,Paris,Dubai,,192,Sim,Cabine,Perdida,Normal,Normal,1736
+86,Madrid,Paris,Paris,Lisboa;Sydney;Porto,68,Nao,Cabine,Entregue,Frágil,Normal,7241
+87,Bangkok,Barcelona,Barcelona,,60,Nao,Porão,Entregue,Normal,Normal,8181
+88,Dubai,London,Tóquio,Roma;São Paulo,106,Sim,Porão,Perdida,Normal,Atrasado,8665
+89,Roma,Porto,Tóquio,Barcelona;Funchal,195,Sim,Porão,Perdida,Frágil,Normal,5810
+90,Rio de Janeiro,Nova Iorque,London,Barcelona;Bangkok;Paris,133,Sim,Porão,Perdida,Normal,Normal,9232
+91,São Paulo,Nova Iorque,Lisboa,Rio de Janeiro,184,Sim,Cabine,Perdida,Frágil,Atrasado,2754
+92,Roma,Tóquio,Sydney,Sydney;Nova Iorque,23,Sim,Porão,Em trânsito,Frágil,Atrasado,3750
+93,Nova Iorque,Sydney,Sydney,,65,Nao,Porão,Entregue,Normal,Atrasado,5838
+94,Lisboa,Dubai,Dubai,,38,Nao,Porão,Entregue,Normal,Atrasado,5915
+95,Rio de Janeiro,Tóquio,Tóquio,London,56,Nao,Cabine,Entregue,Valiosa,Atrasado,3677
+96,Bangkok,Lisboa,Lisboa,Sydney,61,Nao,Cabine,Entregue,Normal,Atrasado,3945
+97,Roma,Rio de Janeiro,Rio de Janeiro,,63,Nao,Cabine,Entregue,Normal,Cancelado,7518
+98,Funchal,Sydney,Bangkok,,153,Sim,Cabine,Perdida,Frágil,Atrasado,5137
+99,Rio de Janeiro,Tóquio,Dubai,Dubai;Sydney;Lisboa,17,Sim,Porão,Em trânsito,Normal,Atrasado,6121
+100,Sydney,Funchal,Paris,,167,Sim,Cabine,Perdida,Normal,Atrasado,4599
