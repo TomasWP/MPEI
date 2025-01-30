@@ -1,0 +1,79 @@
+A)
+
+T = [ 	0    0  0    0	   0    0
+	0.2  0  0    0     0    0
+	0    0  0    0.45  0.3  0
+	0    0  0.1  0	   0.7  0
+	0.8  1  0.9  0     0    0
+	0    0  0    0.55  0    1   ]
+
+Interpretação Geral:
+
+Colunas correspondem ao estado atual (i).
+
+Linhas correspondem ao estado futuro (j).
+
+O estado "Meta" é um estado absorvente, ou seja, uma vez que o sistema entra neste estado, ele não sai mais (t_{Meta,Meta} = 1).
+
+Análise Detalhada de Cada Estado:
+
+Estado 1:
+
+Não há transição para outros estados (t_{j1} = 0 para todos j).
+
+O sistema nunca começa nem evolui a partir do estado 1. Pode representar um estado inicial impossível ou um estado morto.
+
+Estado 2:
+
+Transição para o estado 1 com probabilidade 0.2.
+
+Não há outras transições (t_{j2} = 0 para j ≠ 1).
+
+Isto indica que, a partir do estado 2, só é possível voltar ao estado 1.
+
+Estado 3:
+
+Transição para o estado 4 com probabilidade 0.45.
+
+Transição para o estado 5 com probabilidade 0.3.
+
+Não há transição para outros estados (t_{j3} = 0 para j ≠ 4, 5).
+
+Representa um estado com múltiplas possibilidades de avanço.
+
+Estado 4:
+
+Transição para o estado 3 com probabilidade 0.1.
+
+Transição para o estado 5 com probabilidade 0.7.
+
+Não há transição para outros estados (t_{j4} = 0 para j ≠ 3, 5).
+
+É um estado intermediário, com maior probabilidade de avanço para o estado 5.
+
+Estado 5:
+
+Transição para o estado 1 com probabilidade 0.8.
+
+Transição para o estado 2 com probabilidade 1.
+
+Transição para o estado 3 com probabilidade 0.9.
+
+Não há transição para outros estados (t_{j5} = 0 para j ≠ 1, 2, 3).
+
+É um estado com alta conectividade, permitindo voltar a estados anteriores.
+
+Estado Meta:
+
+Transição para o estado 4 com probabilidade 0.55.
+
+Não há transição para outros estados, exceto para si mesmo (t_{Meta,Meta} = 1).
+
+Representa o estado final do sistema, absorvendo a probabilidade.
+
+
+B)
+
+Percurso mais pequeno 1 - 5 - 4 - Meta
+
+T2 = T(5,1) * T(4,5) * T(6,4)	
